@@ -84,6 +84,7 @@ body{
     display: inline-block;
     border-radius: 0;
     padding: 12px 20px;
+    margin-top: 15px;
 }
 .speech:before {
     content: "";

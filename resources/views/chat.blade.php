@@ -41,22 +41,22 @@
     		<div id="demo-chat-body" class="collapse in">
     			<div class="nano has-scrollbar" style="height:380px">
     				<div class="nano-content pad-all" tabindex="0" style="right: -17px;">
-    					<ul class="list-unstyled media-block">
-    						{{-- <li class="mar-btm">
-    							<div class="media-left">
+    					<ul class="list-unstyled media-block" id="messages">
+
+
+    						 {{-- <li class="mar-btm"> --}}
+    							{{-- <div class="media-left">
     								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm" alt="Profile Picture">
-    							</div>
-    							<div class="media-body pad-hor">
+    							</div> --}}
+    							{{-- <div class="media-body pad-hor">
     								<div class="speech">
     									<a href="#" class="media-heading">John Doe</a>
     									<p>Hello Lucy, how can I help you today ?</p>
-    									<p class="speech-time">
-    									<i class="fa fa-clock-o fa-fw"></i>09:23AM
     									</p>
     								</div>
-    							</div>
-    						</li>
-    						<li class="mar-btm">
+    							</div> --}}
+    						{{-- </li> --}}
+    						{{--<li class="mar-btm">
     							<div class="media-right">
     								<img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-circle img-sm" alt="Profile Picture">
     							</div>
@@ -166,7 +166,7 @@
 								<input type="text" id="message_input" placeholder="Enter your text" class="form-control chat-input">
 							</div>
 							<div class="col-xs-3">
-								<button class="btn btn-primary btn-block" type="submit">message</button>
+								<button class="btn btn-primary btn-block" id="submit" type="submit">message</button>
 							</div>
 						</form>
     				</div>
@@ -175,5 +175,7 @@
     	</div>
     </div>
 </div>
+<script src="{{ asset("js/app.js") }}"></script>
+
 </body>
 </html>

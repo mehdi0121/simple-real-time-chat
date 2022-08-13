@@ -30,21 +30,15 @@ class Message implements ShouldBroadcast
         $this->username=$username;
         $this->message=$message;
     }
-
-    /**
-     * Get the channels the event should broadcast on.
-     *
-     * @return \Illuminate\Broadcasting\Channel|array
-     */
+    
     public function broadcastOn()
     {
         return new Channel('chat');
     }
 
-    public function broadcastAS()
+    public function broadcastAs()
     {
-        # code...
-        return "message";
+        return 'message';
     }
 
 

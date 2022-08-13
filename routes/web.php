@@ -22,7 +22,11 @@ Route::get('/', function () {
 
 Route::post("/send",function (Request $request){
     event(new Message(
-    $request->input("username"),
-    $request->input("message")
+        $request->input("username"),
+        $request->input("message")
     ));
+
+    return response([
+        "status"=>"success"
+    ]);
 });
